@@ -31,20 +31,20 @@ a:visited {
 
 .big-l-shabr {
     font-size: 3.5rem;
-    font-weight: bold;
-    background-color: #343A40;
-    color: white;
-    width: 5rem;
 }
 
-.small-l-shabr {
-    font-size: 3.5rem;
-    background-color: white;
-    color: #343A40;
+.white-shabr {
+    color: white;
 }
 
 .navbar {
     margin-top: -1rem;
+}
+
+.fixed-nav nav {
+    position: fixed;
+    top: 10px;
+    width: 100vw;
 }
 
 .table-info {
@@ -53,13 +53,13 @@ a:visited {
     margin-left: -2rem;
 }
 
+/*.nav-icon-shabr {*/
+/*    padding-right: 6rem;*/
+/*}*/
+
 @media only screen and (min-width: 1000px) {
 
-    .nav-item-shabr {
+    .nav-list-shabr {
         text-align: right;
-    }
-    
-    .shabr-shabr {
-        padding-right: 1000px;
     }
 }

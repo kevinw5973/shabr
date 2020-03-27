@@ -17,36 +17,31 @@
     <div class="fh fw table-borderless shabr-page">
       <table class="table table-shabr">
         <tbody>
-          <tr>
-            <td class="big-l-shabr">S</td>
-            <td class="small-l-shabr">KY</td>
+          <tr class="">
+            <td class="big-l-shabr white-shabr"><b>S</b>KY</td>
           </tr>
           <tr>
-            <td class="big-l-shabr">H</td>
-            <td class="small-l-shabr">OT</td>
+            <td class="big-l-shabr white-shabr"><b>H</b>OT</td>
           </tr>
           <tr>
-            <td class="big-l-shabr">A</td>
-            <td class="small-l-shabr">IR</td>
+            <td class="big-l-shabr white-shabr"><b>A</b>IR</td>
           </tr>
           <tr>
-            <td class="big-l-shabr">B</td>
-            <td class="small-l-shabr">ALLOON</td>
+            <td class="big-l-shabr white-shabr"><b>B</b>ALLOON</td>
           </tr>
           <tr>
-            <td class="big-l-shabr">R</td>
-            <td class="small-l-shabr">IDES</td>
+            <td class="big-l-shabr white-shabr"><b>R</b>IDES</td>
           </tr>
         </tbody>
       </table>
     </div>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark navbar-shabr">
       <a class="navbar-brand shabr-shabr" href="#">SHABR</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler nav-icon-shabr" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse nav-list-shabr" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item nav-item-shabr">
             <a class="nav-link" href="#">Home</a>
@@ -90,19 +85,18 @@
             </tbody>
           </table>
         </div>
-        <div>asdasdasdasdasd</div>
       </div>
       <div class="testimony">
-        
-        
+
+
       </div>
       <div class="pictures">
-        
-        
+
+
       </div>
       <div class="contact">
-        
-        
+
+
       </div>
     </main>
     <!-- Optional JavaScript -->
@@ -110,5 +104,23 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+    // https://www.youtube.com/watch?v=5FLOBCGH3_U&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=24
+      const nav = document.querySelector('#navbar');
+
+      const topOfNav = nav.offsetTop;
+
+      function fixNav() {
+        if(window.scrollY >= topOfNav) {
+          document.body.style.paddingTop = nav.offsetHeight + 'px';
+          document.body.classList.add('fixed-nav');
+        } else {
+          document.body.style.paddingTop = 0;
+          document.body.classList.remove('fixed-nav');
+        }
+      }
+
+      window.addEventListener('scroll', fixNav);
+    </script>
   </body>
 </html>
