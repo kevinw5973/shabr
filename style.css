@@ -1,0 +1,65 @@
+::-webkit-scrollbar {
+    width: 3rem;
+    background-color: white;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: url(img/balloonscroll.png);
+    background-size: 3rem 3rem;
+    background-repeat: no-repeat;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.table-shabr {
+    height: 100vh;
+}
+
+.shabr-page {
+    background-color: #343A40;
+}
+
+.big-l-shabr {
+    font-size: 3.5rem;
+    font-weight: bold;
+    background-color: #343A40;
+    color: white;
+    width: 5rem;
+}
+
+.small-l-shabr {
+    font-size: 3.5rem;
+    background-color: white;
+    color: #343A40;
+}
+
+.navbar {
+    margin-top: -1rem;
+}
+
+.table-info {
+    width: 5rem;
+    text-align: center;
+    margin-left: -2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .nav-item-shabr {
+        text-align: right;
+    }
+    
+    .shabr-shabr {
+        padding-right: 1000px;
+    }
+}
