@@ -6,12 +6,14 @@ a:visited {
     text-decoration: none;
 }
 
-.table-shabr {
+.shabr-page-table {
     height: 100vh;
+    white-space:nowrap
 }
 
 body {
     background-color: #343A40;
+    overflow-x: hidden;
 }
 
 .big-l-shabr {
@@ -37,7 +39,7 @@ body {
 
 .fixed-nav nav {
     position: fixed;
-    top: 1rem;
+    top: 1.5rem;
     width: 100vw;
 }
 
@@ -46,15 +48,19 @@ body {
     text-align: center;
     margin-left: -2rem;
     background-color: #41474C;
+    padding-top: 10rem;
+    height: 100vh;
+    flex-wrap: nowrap;
 }
 
 .info {
     display: flex;
     flex-direction: row;
     color: white;
+    background-color: #41474C;
 }
 
-.info-context {
+.info-context-small {
     background-color: #41474C;
     color: white;
     padding: 1rem;
@@ -135,11 +141,25 @@ body {
     font-weight: lighter;
 }
 
+.info-context-large {
+    display: none;
+}
 
+@media only screen and (min-width: 300px) {
+    .fixed-nav nav {
+        position: fixed;
+        top: 1rem;
+        width: 100vw;
+    }
+}
 
-/*.nav-icon-shabr {*/
-/*    padding-right: 6rem;*/
-/*}*/
+@media only screen and (max-width: 400px) {
+    .fixed-nav nav {
+        position: fixed;
+        top: 1.5rem;
+        width: 100vw;
+    }
+}
 
 @media only screen and (min-width: 1000px) {
 
@@ -158,11 +178,64 @@ body {
         background-repeat: no-repeat;
     }
 
+    .fixed-nav nav {
+        position: fixed;
+        top: 1rem;
+        width: 100vw;
+    }
+
+    .shabr-shabr {
+        display: none;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .fixed-nav .shabr-shabr {
+        display: block;
+    }
+
     .nav-list-shabr {
         text-align: right;
     }
 
-    .shabr-shabr {
-        padding-right: 1000px;
+    .info-context-small {
+        display: none;
+    }
+
+    .info-context-large {
+        display: block;
+        height: 100vh;
+    }
+
+    .card-group-shabr {
+        flex-direction: row;
+        word-wrap: break-word;
+    }
+
+    .card-body-shabr {
+        width: 40vw;
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+    }
+
+    .time-img {
+       margin-top: -2rem;
+    }
+
+    .weather-img {
+        height: 80px;
+        width: 80px;
+        margin-top: -1rem;
+    }
+
+    .flight-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .participation-img {
+        height: 80px;
+        width: 80px;
+        margin-top: -1rem;
     }
 }
