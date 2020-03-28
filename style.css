@@ -151,7 +151,7 @@ body {
 
 .testimony-banner {
     margin-left: -2rem;
-    margin-top: 1rem;
+    margin-top: 10rem;
     width: 5rem;
     text-align: center;
     background-color: #41474C;
@@ -173,8 +173,19 @@ body {
 
 .testiomny-indiv {
     word-wrap: break-word;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 2rem;
 }
+
+.testiomny-indiv-color {
+    background-color: #33373A;
+}
+
+.testimony-text {
+        font-weight: lighter;
+        font-size: 1rem;
+    }
 
 @media only screen and (min-width: 300px) {
     .fixed-nav nav {
@@ -189,6 +200,13 @@ body {
         position: fixed;
         top: 1.5rem;
         width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .testimony-text {
+        font-weight: lighter;
+        font-size: 1.5rem;
     }
 }
 
@@ -268,5 +286,25 @@ body {
         height: 80px;
         width: 80px;
         margin-top: -1rem;
+    }
+
+    .testiomny-indiv {
+        word-wrap: break-word;
+        margin-bottom: 4rem;
+        width: 47%;
+        margin: 1rem;
+    }
+
+    .testimony-text {
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+
+    .testimony-context-small {
+        margin-left: 3.5rem;
+    }
+
+    .testimony-banner {
+        margin-top: 1rem;
     }
 }
