@@ -11,6 +11,10 @@ a:visited {
     white-space:nowrap
 }
 
+.br-shabr {
+    line-height: 1px;
+}
+
 body {
     background-color: #343A40;
     overflow-x: hidden;
@@ -143,6 +147,33 @@ body {
 
 .info-context-large {
     display: none;
+}
+
+.testimony-banner {
+    margin-left: -2rem;
+    margin-top: 1rem;
+    width: 5rem;
+    text-align: center;
+    background-color: #41474C;
+
+}
+
+.testimony {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #41474C;
+}
+
+.testimony-context-small {
+    float: right;
+    width: 80vw;
+    padding: 2rem;
+}
+
+.testiomny-indiv {
+    word-wrap: break-word;
+    margin-bottom: 4rem;
 }
 
 @media only screen and (min-width: 300px) {
