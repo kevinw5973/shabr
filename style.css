@@ -22,6 +22,9 @@ a:visited {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    z-index: 15;
+    overflow-wrap: break-word;
+    margin-left: -10rem;
 }
 
 body {
@@ -193,14 +196,16 @@ body {
 }
 
 .testimony-text {
-        font-weight: lighter;
-        font-size: 1rem;
+    font-weight: lighter;
+    font-size: 1rem;
 }
 
 .pictures {
     width: 100vw;
     background-color: #41474C;
     margin-top: -10rem;
+    z-index: 10;
+    margin-bottom: 10rem;
 }
 
 .picture-banner {
@@ -211,6 +216,7 @@ body {
     margin-left: -2rem;
     float: left;
     padding: 0;
+    height: 100vh;
 }
 
 .picture-frames-small {
@@ -237,12 +243,54 @@ body {
     margin-bottom: 3rem;
 }
 
-@media only screen and (min-width: 300px) {
-    .fixed-nav nav {
-        position: fixed;
-        top: 1rem;
-        width: 100vw;
-    }
+.contact-shabr {
+    bottom: 0rem;
+    width: 100vw;
+    color: #41474C;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-wrap: break-word;
+    padding-bottom: 15rem;
+}
+
+.contact-shabr-child {
+    padding-bottom: 10rem;
+}
+
+.contact-parent {
+    background-color: #343A40;
+    margin-top: 5rem;
+    width: 97vw;
+    position: absolute;
+    bottom: -220rem;
+}
+
+.contact {
+    padding: 1rem;
+    word-wrap: break-word;
+    font-weight: lighter;
+    color: white;
+    float: left;
+}
+
+.copy-right {
+    padding: 1rem;
+    color: white;
+    float: right;
+}
+
+.shabr-copyright {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.copyright-2016 {
+    font-size: 0.5rem;
+    text-align: center;
 }
 
 @media only screen and (min-width: 300px) {
@@ -251,6 +299,24 @@ body {
         top: 1rem;
         width: 100vw;
     }
+
+    .contact-parent {
+        width: 100vw;
+    }
+
+    .copy-right {
+        width: 100vw;
+    }
+
+    .shabr-copyright {
+        text-align: center;
+    }
+
+    .contact {
+        text-align: center;
+        float: none;
+    }
+
 }
 
 
@@ -298,6 +364,35 @@ body {
         padding: 0;
         border: 0.5rem #33373A solid;
         background-color: #41474C;
+    }
+
+    .contact {
+        padding: 1rem;
+        word-wrap: break-word;
+        font-weight: lighter;
+        color: white;
+        float: left;
+    }
+
+    .copy-right {
+        padding: 1rem;
+        color: white;
+        float: right;
+        width: 50vw;
+    }
+
+    .shabr-copyright {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .copyright-2016 {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .contact-parent {
+        margin-top: 20rem;
     }
 }
 
