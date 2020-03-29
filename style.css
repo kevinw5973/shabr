@@ -8,15 +8,24 @@ a:visited {
 
 .shabr-page-table {
     height: 100vh;
-    white-space:nowrap
+    white-space: nowrap;
+    background-color: #343A40;
 }
 
 .br-shabr {
-    line-height: 1px;
+    line-height: 1rem;
+    background-color: #343A40;
+    color: #343A40;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body {
-    background-color: #343A40;
+    background-color: #41474C;
     overflow-x: hidden;
 }
 
@@ -42,9 +51,10 @@ body {
 }
 
 .fixed-nav nav {
-    position: fixed;
+    position: fixed !important;
     top: 1.5rem;
     width: 100vw;
+    z-index: 10000;
 }
 
 .table-info {
@@ -185,7 +195,47 @@ body {
 .testimony-text {
         font-weight: lighter;
         font-size: 1rem;
-    }
+}
+
+.pictures {
+    width: 100vw;
+    background-color: #41474C;
+    margin-top: -10rem;
+}
+
+.picture-banner {
+    margin-top: 10rem;
+    width: 5rem;
+    text-align: center;
+    background-color: #41474C;
+    margin-left: -2rem;
+    float: left;
+    padding: 0;
+}
+
+.picture-frames-small {
+    width: 70%;
+    float: right;
+    margin-top: 20rem;
+    margin-right: 2.5rem;
+    padding: 0;
+    border: 0.5rem #33373A solid;
+    background-color: #41474C;
+}
+
+.picture-frames-small-2 {
+    width: 70%;
+    float: right;
+    margin-top: 10rem;
+    margin-right: 2.5rem;
+    padding: 0;
+    border: 0.5rem #33373A solid;
+    background-color: #41474C;
+}
+
+.slideframes-1 {
+    margin-bottom: 3rem;
+}
 
 @media only screen and (min-width: 300px) {
     .fixed-nav nav {
@@ -194,6 +244,15 @@ body {
         width: 100vw;
     }
 }
+
+@media only screen and (min-width: 300px) {
+    .fixed-nav nav {
+        position: fixed;
+        top: 1rem;
+        width: 100vw;
+    }
+}
+
 
 @media only screen and (max-width: 400px) {
     .fixed-nav nav {
@@ -208,23 +267,58 @@ body {
         font-weight: lighter;
         font-size: 1.5rem;
     }
+
+    .info-context-small {
+        margin-left: 2rem;
+    }
+
+    .info-c-h {
+        margin-left: -2rem;
+    }
+
+    .testimony-context-small {
+        margin-left: 4rem;
+    }
+
+    .picture-frames-small {
+        width: 70%;
+        float: right;
+        margin-top: 11rem;
+        margin-right: 5rem;
+        padding: 0;
+        border: 0.5rem #33373A solid;
+        background-color: #41474C;
+    }
+
+    .picture-frames-small-2 {
+        width: 70%;
+        float: right;
+        margin-top: 6rem;
+        margin-right: 5rem;
+        padding: 0;
+        border: 0.5rem #33373A solid;
+        background-color: #41474C;
+    }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
 
     ::-webkit-scrollbar {
         width: 3rem;
         background-color: white;
+        z-index: 10;
     }
 
     ::-webkit-scrollbar-track {
         background-color: white;
+        z-index: 10;
     }
 
     ::-webkit-scrollbar-thumb {
         background-image: url(img/balloonscroll.png);
         background-size: 3rem 3rem;
         background-repeat: no-repeat;
+        z-index: 10;
     }
 
     .fixed-nav nav {
@@ -254,6 +348,7 @@ body {
     .info-context-large {
         display: block;
         height: 100vh;
+        margin-left: 5rem;
     }
 
     .card-group-shabr {
@@ -301,10 +396,30 @@ body {
     }
 
     .testimony-context-small {
-        margin-left: 3.5rem;
+        margin-left: 6rem;
     }
 
     .testimony-banner {
         margin-top: 1rem;
+    }
+
+    .picture-frames-small {
+        width: 40%;
+        float: right;
+        margin-top: 25rem;
+        margin-right: 7rem;
+        padding: 0;
+        border: 0.5rem #33373A solid;
+        background-color: #41474C;
+    }
+
+    .picture-frames-small-2 {
+        width: 40%;
+        float: right;
+        margin-top: 25rem;
+        margin-right: 5rem;
+        padding: 0;
+        border: 0.5rem #33373A solid;
+        background-color: #41474C;
     }
 }
