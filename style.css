@@ -44,6 +44,22 @@ body {
     color: #343A40;
 }
 
+.table-home {
+    width: 5rem;
+    text-align: center;
+    margin-left: -2rem;
+    background-color: #41474C;
+    height: 100vh;
+    margin-top: 10rem;
+    flex-wrap: nowrap;
+}
+
+.home-context-small {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
 .navbar-shabr {
     margin-top: -1rem;
     width: 100vw;
@@ -58,6 +74,12 @@ body {
     top: 1.5rem;
     width: 100vw;
     z-index: 10000;
+}
+
+.dance-ride {
+    margin-top: 5rem;
+    color: white;
+    font-size: 1.5rem;
 }
 
 .table-info {
@@ -265,7 +287,7 @@ body {
     margin-top: 5rem;
     width: 97vw;
     position: absolute;
-    bottom: -220rem;
+    bottom: -300rem;
 }
 
 .contact {
@@ -295,7 +317,7 @@ body {
 @media only screen and (min-width: 300px) {
     .fixed-nav nav {
         position: fixed;
-        top: 1rem;
+        top: 0rem;
         width: 100vw;
     }
 
@@ -322,12 +344,50 @@ body {
 @media only screen and (max-width: 400px) {
     .fixed-nav nav {
         position: fixed;
-        top: 1.5rem;
+        top: 1rem;
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .fixed-nav nav {
+        position: fixed;
+        top: 1rem;
         width: 100vw;
     }
 }
 
 @media only screen and (min-width: 600px) {
+    .home {
+        display: block;
+        flex: none;
+    }
+
+    .home-card-shabr {
+        margin: 0 auto;
+        width: 100vw;
+        width: 50%;
+        font-size: 2rem;
+    }
+
+    .home-context-small-card {
+        flex: none;
+        text-align: center;
+        width: 50vw;
+    }
+
+    .home-font {
+        font-size: 2rem;
+    }
+
+    .home-context-small {
+        width: 100vw;
+    }
+
+    .dance-ride {
+        font-size: 3rem;
+    }
+
     .testimony-text {
         font-weight: lighter;
         font-size: 1.5rem;
